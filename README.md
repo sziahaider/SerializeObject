@@ -12,8 +12,10 @@ There is a certain pattern for elements to make this library fully functioning.
 Each element name must be declared as an object and its property for example:
 if we have a form for user profile which contains two fields <b>Name</b> and <b>Email</b>
 The attribute name of field <b>Name</b> should be like: profile->name<br/>
-And the attribute name of field <b>Email</b> should be like: profile->email<br/>
+And the attribute name of field <b>Email</b> should be like: profile->email.<br/>
+The '->' symbol is a separator between object and property.
 
+## Sample HTML form:
 ```html
 <form name="frm" method="post">
   <label for="profile->name">Name:</label><br/>
