@@ -2,6 +2,7 @@
 SerializeObject is a jQuery plugin it will serialize html form data in to a Javascript object with the help of single function.
 
 # Sample HTML file
+<code>
 <html>
     <head>
         <title>JSON Lib</title>
@@ -36,4 +37,4 @@ SerializeObject is a jQuery plugin it will serialize html form data in to a Java
         </form>
     </body>
 </html>
-
+</code>
