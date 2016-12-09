@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Serialize Object library</title>
+        <title>JSON Lib</title>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="object-lib.js"></script>
     </head>
@@ -29,6 +29,18 @@
             
             <label for="profile->address->country">Country:</label><br/>
             <input type="text" name="profile->address->country"/><br/>
+
+            <br/>
+            <input type="button" value="Serialize Object" onclick="getObject()"/><br/>
+            <hr>
+            <label>Output:</label><br/>
+            <textarea id="txtResult" rows="10" cols="100"></textarea>
         </form>
+        <script>
+            function getObject(){
+                var obj=$('form').serializeObject();
+                $('#txtResult').val(JSON.stringify(obj));
+            }
+        </script>
     </body>
 </html>
