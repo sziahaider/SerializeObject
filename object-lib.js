@@ -1,3 +1,8 @@
+/*
+@filename:object-lib.js
+@author:Zia haider
+@created on:12-09-2016
+*/
 $.fn.serializeObject=function(){
                 var tempObj={};
                 $(this).find('[name]').each(function(){
